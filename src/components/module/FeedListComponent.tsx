@@ -95,6 +95,8 @@ const FeedListComponent = () => {
                     )
                 }}
                 renderSectionHeader={({ section }) => <FeedListComponentRow item={section.fullWidthFeedData} feedType={section.type} isFullWidthCard={true} />}
+                keyExtractor={(item, index) => String(index)}
+                showsVerticalScrollIndicator={false}
             />
         // {/* </VirtualizedView> */}
     )
