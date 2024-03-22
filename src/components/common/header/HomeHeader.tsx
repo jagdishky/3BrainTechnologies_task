@@ -14,18 +14,6 @@ interface HomeHeaderProps {
 }
 
 const HomeHeader = ({ }: HomeHeaderProps) => {
-
-    // useFocusEffect(
-    //     React.useCallback(() => {
-    //         changeStatusBarColor(colors.white, 'dark-content')
-    //     }, [])
-    // );
-
-    function onPressDrawer() {
-
-    }
-
-
     return (
         <View style={styles.mainContainer} >
             <View style={{ flex: 1, ...commonStyle.flexDirectionRow, gap: spacing.MARGIN_20 }} >
@@ -47,8 +35,6 @@ const HomeHeader = ({ }: HomeHeaderProps) => {
 
 const styles = StyleSheet.create({
     mainContainer: {
-        // flexDirection: 'row',
-        // alignItems: "center",
         ...commonStyle.flexDirectionRow,
         paddingHorizontal: APP_PADDING_HORIZONTAL,
         paddingVertical : spacing.PADDING_20,

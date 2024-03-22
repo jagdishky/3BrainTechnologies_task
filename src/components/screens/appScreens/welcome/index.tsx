@@ -1,3 +1,4 @@
+import { useFocusEffect } from '@react-navigation/native';
 import React from 'react';
 import { Image, StyleSheet, View } from 'react-native';
 import { textScale, verticalScale } from '../../../../styles/responsiveStyles';
@@ -9,7 +10,6 @@ import { SCREEN_DRAWER } from '../../../../utility/constants';
 import { Images } from '../../../../utility/imagePaths';
 import RegularText from '../../../common/RegularText';
 import CommonButton from '../../../common/buttons/CommonButton';
-import { useFocusEffect } from '@react-navigation/native';
 
 const WelcomeScreen = ({ }) => {
 

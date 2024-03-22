@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { FlatList, Image, ImageStyle, StyleProp, StyleSheet, TouchableOpacity, View } from "react-native";
+import { FlatList, Image, StyleSheet, TouchableOpacity, View } from "react-native";
 import commonStyle, { APP_PADDING_HORIZONTAL } from "../../styles/commonStyles";
-import { Images } from "../../utility/imagePaths";
-import { spacing } from "../../styles/spacing";
-import RegularText from "../common/RegularText";
 import { textScale } from "../../styles/responsiveStyles";
+import { spacing } from "../../styles/spacing";
 import colors from "../../utility/colors";
-import { fontNames } from "../../styles/typography";
+import { Images } from "../../utility/imagePaths";
+import RegularText from "../common/RegularText";
 
 interface MenuItemProps {
     data: Record<string, any>

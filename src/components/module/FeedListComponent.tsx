@@ -1,20 +1,10 @@
 import React from "react";
-import { FlatList, SectionList, StyleSheet, View } from "react-native";
-import FeedListComponentRow from "../row/FeedListComponentRow";
-import { Images } from "../../utility/imagePaths";
-import RegularText from "../common/RegularText";
-import { spacing } from "../../styles/spacing";
+import { FlatList, SectionList } from "react-native";
 import { APP_PADDING_HORIZONTAL } from "../../styles/commonStyles";
-import VirtualizedView from "../common/View/VirtualizedView";
+import { spacing } from "../../styles/spacing";
 import { FEED_TYPE } from "../../utility/constants";
-
-const RenderSectionHeader = () => {
-    return (
-        <View>
-
-        </View>
-    )
-}
+import { Images } from "../../utility/imagePaths";
+import FeedListComponentRow from "../row/FeedListComponentRow";
 
 const FeedListComponent = () => {
 
@@ -38,16 +28,7 @@ const FeedListComponent = () => {
         },
         {
             type: FEED_TYPE[0],
-            data: [
-                // {
-                //     img: Images.IMG_DIAMOND,
-                //     title: 'Ice cream is made with carrageenan'
-                // },
-                // {
-                //     img: Images.IMG_DIAMOND,
-                //     title: 'Ice cream is made with carrageenan'
-                // },
-            ],
+            data: [ ],
             fullWidthFeedData: {
                 img: Images.IMG_MALE_MODAL_FEED,
                 title: 'Ice cream is made with carrageenan'
@@ -55,16 +36,7 @@ const FeedListComponent = () => {
         },
         {
             type: FEED_TYPE[1],
-            data: [
-                // {
-                //     img: Images.IMG_DIAMOND,
-                //     title: 'Ice cream is made with carrageenan'
-                // },
-                // {
-                //     img: Images.IMG_DIAMOND,
-                //     title: 'Ice cream is made with carrageenan'
-                // },
-            ],
+            data: [],
             fullWidthFeedData: {
                 img: Images.IMG_HILLS_FEED,
                 title: 'Ice cream is made with carrageenan'
@@ -73,7 +45,6 @@ const FeedListComponent = () => {
     ]
 
     return (
-        // <VirtualizedView style={styles.mainContainer} >
             <SectionList
                 sections={FEED_DATA}
                 renderItem={({ section, index }) => {
@@ -98,16 +69,7 @@ const FeedListComponent = () => {
                 keyExtractor={(item, index) => String(index)}
                 showsVerticalScrollIndicator={false}
             />
-        // {/* </VirtualizedView> */}
     )
 }
-// 
-const styles = StyleSheet.create({
-    mainContainer: {
-        // alignSelf :'center'
-        // paddingHorizontal: APP_PADDING_HORIZONTAL,
-        // flexGrow : 1
-    },
-})
 
 export default FeedListComponent;

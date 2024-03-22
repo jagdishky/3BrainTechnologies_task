@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
-import { Image, ImageSourcePropType, ScrollView, StyleSheet, View } from 'react-native';
+import { Image, ImageSourcePropType, StyleSheet, View } from 'react-native';
+import { boxShadow } from '../../../../styles/Mixins';
+import commonStyle from '../../../../styles/commonStyles';
+import { textScale } from '../../../../styles/responsiveStyles';
+import { spacing } from '../../../../styles/spacing';
 import colors from '../../../../utility/colors';
-import HomeHeader from '../../../common/header/HomeHeader';
-import CommonSearchBar from '../../../common/inputBoxes/CommonSearchBar';
 import { Images } from '../../../../utility/imagePaths';
 import RegularText from '../../../common/RegularText';
-import commonStyle from '../../../../styles/commonStyles';
-import { spacing } from '../../../../styles/spacing';
-import { textScale } from '../../../../styles/responsiveStyles';
+import HomeHeader from '../../../common/header/HomeHeader';
+import CommonSearchBar from '../../../common/inputBoxes/CommonSearchBar';
 import FeedListComponent from '../../../module/FeedListComponent';
-import { boxShadow } from '../../../../styles/Mixins';
 
 interface RenderCategoryProps {
     title: String,
